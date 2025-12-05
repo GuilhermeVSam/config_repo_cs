@@ -13,5 +13,5 @@ eureka:
 
 
 app:
-  name: estudante
-  description: Microservico de Estudantes
+  name: usuario
+  description: Microservico de Usuarios
