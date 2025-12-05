@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    instace-id: ${spring.application.name}:${server.port}
+
+
+app:
+  name: estudante
+  description: Microservico de Estudantes

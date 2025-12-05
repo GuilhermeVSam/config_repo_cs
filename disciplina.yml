@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    instace-id: ${spring.application.name}:${server.port}
+
+
+app:
+  name: disciplina
+  description: Microservico de Disciplinas
