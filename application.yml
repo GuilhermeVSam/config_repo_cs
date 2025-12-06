@@ -6,4 +6,4 @@ eureka:
     register-with-eureka: true
   instance:
     prefer-ip-address: true
-    instace-id: ${spring.application.name}:${server.port}
+    instance-id: ${spring.application.name}:${server.port}
